@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=MonteCarlo&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f6c6ea;
+}
+
+.drops {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.drop {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  background-color: transparent;
+  border-radius: 39% 61% 31% 69% / 55% 42% 58% 45%;
+  box-shadow: inset 10px 10px 10px rgba(0, 0, 0, 0.05),
+    15px 25px 10px rgba(0, 0, 0, 0.1), 15px 20px 20px rgba(0, 0, 0, 0.05),
+    inset -10px -10px 15px rgba(255, 255, 255, 0.9);
+}
+
+.drop::before {
+  content: "";
+  position: absolute;
+  top: 25px;
+  left: 35px;
+  background-color: #fff;
+  width: 20px;
+  height: 20px;
+  border-radius: 65% 35% 29% 71% / 61% 42% 58% 39%;
+}
+
+.drop::after {
+  content: "Anasooya";
+  position: absolute;
+  top: 55px;
+  left: 15px;
+  font-family: MonteCarlo, sans-serif;
+  font-weight: 600;
+  color: #b61919;
+  font-size: 1.5rem;
+  letter-spacing: 5px;
+  border-radius: 31% 69% 18% 82% / 38% 24% 76% 62%;
+}
+
+.drop:nth-child(2) {
+  transform: scale(0.5) translate(200px, 240px);
+  border-radius: 64% 36% 57% 43% / 24% 28% 72% 76%;
+}
+.drop:nth-child(2)::after {
+  content: "You";
+  position: absolute;
+  top: 55px;
+  left: 45px;
+  font-family: "Courier New", Courier, monospace;
+  font-style: italic;
+  font-weight: 600;
+  color: red;
+  font-size: 2rem;
+  letter-spacing: 5px;
+  border-radius: 31% 69% 18% 82% / 38% 24% 76% 62%;
+}
+.drop:nth-child(3) {
+  transform: scale(0.5) translate(-200px, 180px);
+  border-radius: 58% 42% 56% 44% / 51% 44% 56% 49%;
+}
+.drop:nth-child(3)::after {
+  content: "I";
+  position: absolute;
+  top: 55px;
+  left: 65px;
+  font-family: "Courier New", Courier, monospace;
+  font-style: italic;
+  font-weight: 600;
+  color: red;
+  font-size: 2rem;
+  letter-spacing: 5px;
+  border-radius: 58% 42% 56% 44% / 51% 44% 56% 49%;
+}
+
+.drop:nth-child(4) {
+  transform: scale(0.5) translate(-10px, 300px);
+  border-radius: 44% 56% 29% 71% / 43% 37% 63% 57%;
+}
+.drop:nth-child(4)::after {
+  content: "Love";
+  position: absolute;
+  top: 55px;
+  left: 23px;
+  font-family: "Courier New", Courier, monospace;
+  font-style: italic;
+  font-weight: 600;
+  color: red;
+  font-size: 2rem;
+  letter-spacing: 5px;
+  border-radius: 31% 69% 18% 82% / 38% 24% 76% 62%;
+}
