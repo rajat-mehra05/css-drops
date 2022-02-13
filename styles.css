@@ -44,7 +44,7 @@ body {
 }
 
 .drop::after {
-  content: "Anasooya";
+  content: "";
   position: absolute;
   top: 55px;
   left: 15px;
@@ -61,7 +61,7 @@ body {
   border-radius: 64% 36% 57% 43% / 24% 28% 72% 76%;
 }
 .drop:nth-child(2)::after {
-  content: "You";
+  content: "";
   position: absolute;
   top: 55px;
   left: 45px;
@@ -78,7 +78,7 @@ body {
   border-radius: 58% 42% 56% 44% / 51% 44% 56% 49%;
 }
 .drop:nth-child(3)::after {
-  content: "I";
+  content: "";
   position: absolute;
   top: 55px;
   left: 65px;
@@ -96,7 +96,7 @@ body {
   border-radius: 44% 56% 29% 71% / 43% 37% 63% 57%;
 }
 .drop:nth-child(4)::after {
-  content: "Love";
+  content: "";
   position: absolute;
   top: 55px;
   left: 23px;
